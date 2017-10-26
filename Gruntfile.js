@@ -117,12 +117,14 @@ module.exports = function (grunt) {
       },
       server: {
         files: {
-          '.tmp/index.html': '<%= config.app %>/index.html'
+          '.tmp/index.html': '<%= config.app %>/index.html',
+          '.tmp/login.html': '<%= config.app %>/login.html'
         }
       },
       dist: {
         files: {
-          '<%= config.dist %>/index.html': '<%= config.app %>/index.html'
+          '<%= config.dist %>/index.html': '<%= config.app %>/index.html',
+          '<%= config.dist %>/login.html': '<%= config.app %>/login.html'
         }
       }
     },

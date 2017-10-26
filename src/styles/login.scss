@@ -1,10 +1,6 @@
-.panel-login {
-  header {
-    padding: 1.5em 0;
-  }
-  .panel-footer {
-    .lead {
-      margin-bottom: 5px;
-    }
-  }
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
