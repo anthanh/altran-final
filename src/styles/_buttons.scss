@@ -1,1 +1,11 @@
 // BUTTONS
+.btn {
+  &.btn-facebook {
+    background-color: $brand-facebook;
+    color: $white;
+  }
+  &.btn-twitter {
+    background-color: $brand-twitter;
+    color: $white;
+  }
+}
