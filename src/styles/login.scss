@@ -3,4 +3,14 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+
+  .help-block {
+    display: none;
+  }
+
+  .has-error {
+    .help-block {
+      display: block;
+    }
+  }
 }
