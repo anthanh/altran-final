@@ -117,16 +117,12 @@ module.exports = function (grunt) {
       },
       server: {
         files: {
-          '.tmp/cv.html': '<%= config.app %>/cv.html',
-          '.tmp/bootstrap.html': '<%= config.app %>/bootstrap.html',
-          // '.tmp/index.html': '<%= config.app %>/index.html',
-          // '.tmp/bootstrap.html': '<%= config.app %>/bootstrap.html'
+          '.tmp/index.html': '<%= config.app %>/index.html'
         }
       },
       dist: {
         files: {
-          '<%= config.dist %>/cv.html': '<%= config.app %>/cv.html',
-          '<%= config.dist %>/bootstrap.html': '<%= config.app %>/bootstrap.html'
+          '<%= config.dist %>/index.html': '<%= config.app %>/index.html'
         }
       }
     },
@@ -145,19 +141,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // grunt-contrib-sass
-    // sass: {
-    //   all: {
-    //     files: [{
-    //       expand: true,
-    //       cwd: appConfig.app,
-    //       src: ['styles/cv.scss'],
-    //       dest: '.tmp',
-    //       ext: '.css'
-    //     }]
-    //   }
-    // },
-
     // grunt-sass
     sass: {
       options: {
@@ -165,7 +148,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          '.tmp/styles/cv.css': '<%= config.app %>/styles/cv.scss'
+          '.tmp/styles/main.css': '<%= config.app %>/styles/main.scss'
         }
       }
     },
@@ -235,7 +218,7 @@ module.exports = function (grunt) {
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
-      html: '<%= config.dist %>/cv.html',
+      html: '<%= config.dist %>/index.html',
       options: {
         dest: '<%= config.dist %>',
         flow: {
