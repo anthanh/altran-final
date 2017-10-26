@@ -1,0 +1,12 @@
+.panel-product {
+  img {
+    width: 100%;
+  }
+  .panel-footer {
+    .row-fluid:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+}
