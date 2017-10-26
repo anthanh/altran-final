@@ -1,0 +1,20 @@
+{
+  "name": "altran-oct",
+  "description": "Example project for Altran sessions",
+  "main": "index.js",
+  "authors": [
+    "anthanh"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "altran"
+  ],
+  "homepage": "https://github.com/anthanh/altran-oct",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
